@@ -31,6 +31,22 @@ body {
 .main-nav__item{
     display: inline-block;
 }
+
+.main-nav{
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 53px);
+}
+
+.main-nav__items{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.main-header > div{
+    display: inline-block;
+}
 /* h1 {
     font-family: sans-serif;
 } */
