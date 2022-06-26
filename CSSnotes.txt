@@ -263,3 +263,5 @@ POSITIONING ELEMENTS WITH CSS:
 	-Understanding the 		* If all elements are fixed and are in the same Z. Then, the html code dictates how they stack (in order seen)
 	 Stacking Context:		* Children can not go behind the parent's Z-index AND it can't go above elements that are not related to it. This is because
 					  elements that have fixed on them define their own STACKING CONTEXT
+
+UNDERSTANDING BACKGROUND-SIZE:
