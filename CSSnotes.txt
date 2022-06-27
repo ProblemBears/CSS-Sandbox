@@ -358,3 +358,16 @@ SIZES & UNITS:
 											1) When an element is fixed, the container of the element is the viewport, so % are relative to that.
 											2) A % with an element that has position:absolute; is relative to the ancestor's content+padding. (The ancestor is anything that doesn't have position:static)
 											3) A % with an element that is relative or static is relative to it's ancestor's content. (The closest ancestor which is a block level element)
+	-Using min-width/h		* To complement a width. We can limit how it resizes when the browser itself resizes by
+	 & max-width/height		  placing these limiter properties.
+
+	-Working with "rem"		* Units which are calculated based on the "font" size.
+	 and "em"				* Note: Users can change their default font size to make the website font bigger, unless
+	 						  we overwrite it with CSS.
+							* Syntax: 		font-size: 1.2em;
+								** em is multiplied by the default font-size we can change on the browser
+							* THE ALARMING THING ABOUT EM is that it multiplies the value we give it with other
+							  values it inherits from. WE USE REM when we just want to multiply by the default
+							  browser font. (That's why the r in rem stands for ROOT)
+							* rem units can also be added to values of margins
+							* Default unit is usually 1 rem = 16px
