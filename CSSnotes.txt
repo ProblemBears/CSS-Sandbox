@@ -295,3 +295,14 @@ UNDERSTANDING BACKGROUND-SIZE:
 									** left top; //left edge of the image is positioned on the left edge of container
 												 //same for top, SO NO CROPPING HAPPENS ON LEFT & TOP
 									** THESE KEY WORDS CAN STILL BE COMBINED W/ PERCENTS
+
+	-background shorthand:	*Properties that affect images:
+									-image : set one or more background images
+									-position: set init position, relative to background position layer
+									-size: 
+									-repeat: 
+									-origin: set bg positioning area
+									-attachment: set the scrolling behaviour of bg image
+							*Properties that don't:
+									-color
+									-clip: defines whether backgrounds extends underneath borders
