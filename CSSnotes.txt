@@ -320,3 +320,8 @@ UNDERSTANDING BACKGROUND-SIZE:
 
 	-background shorthand	*Syntax:		background: image position/size repeat (origin clip) attachment;
 	 for image, pos, size:													    1 for same ^ 2 for diff
+
+	-Styling images:		*When setting sizes, your selector should directly reference the <img>, else, 
+	 (not backgrounds)		 the  <img> will use it's default size
+	 						*height: some% is relative to the <img>'s default size. Not the parent node.
+							*The parent element of the <img> should be inline-block to respect sizing
