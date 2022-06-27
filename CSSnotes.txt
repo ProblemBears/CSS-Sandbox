@@ -266,7 +266,8 @@ POSITIONING ELEMENTS WITH CSS:
 
 UNDERSTANDING BACKGROUND-SIZE:
 	-There's more to background that we've seen. When we define an image, we actually set the background-image.
-	 With color it's background-color. 
+	 With color it's background-color.
+	-There can be multiple images in a background property. Simply comma seperate them in the short hand with as many other properties as you want. This works with transparency
 
 	-background-size:		* If you set 100px  you set the w&h, two args means width then height.
 							* You can do ^ with percentages
@@ -325,3 +326,14 @@ UNDERSTANDING BACKGROUND-SIZE:
 	 (not backgrounds)		 the  <img> will use it's default size
 	 						*height: some% is relative to the <img>'s default size. Not the parent node.
 							*The parent element of the <img> should be inline-block to respect sizing
+
+	-Linear & Radial		*Gradients are treated as images so it's property is background-image
+	 Gradients:				*Value Examples:
+	 								** linear-gradient( to left bottom, red, blue); //First arg is the direction. Can be word syntax or degrees
+																					//You can also define as many colors as needed. Useful color is transparent
+																					// Put percents at the right of colors to define where the gradient starts
+									** radial-gradient( circle at top (or 20% 50%), red, blue);
+
+	-filter:				*Values:
+								** blur(px);
+								** grayscale(%);
