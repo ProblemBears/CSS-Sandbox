@@ -371,3 +371,7 @@ SIZES & UNITS:
 							  browser font. (That's why the r in rem stands for ROOT)
 							* rem units can also be added to values of margins
 							* Default unit is usually 1 rem = 16px
+
+	-Viewport Units "vw"	*These units let us always refer our sizes to the actual viewport
+	 & "vh":				*There's also vmin & vmax
+	 						*using vw may give you a default scrollbar. You could get rid of it w/ CSS

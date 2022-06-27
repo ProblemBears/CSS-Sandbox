@@ -3,8 +3,8 @@ main {
 }
 
 .background {
-    background: url("../images/plans-background.jpg") center/cover;
-    position: fixed;
+    background: url("../images/plans-background.jpg") left 10% bottom 100%/cover;
+    position: relative;
     width: 100%;
     height: 100%;
     z-index: -1;
