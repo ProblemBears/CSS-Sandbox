@@ -265,3 +265,21 @@ POSITIONING ELEMENTS WITH CSS:
 					  elements that have fixed on them define their own STACKING CONTEXT
 
 UNDERSTANDING BACKGROUND-SIZE:
+	-There's more to background that we've seen. When we define an image, we actually set the background-image.
+	 With color it's background-color. 
+
+	-background-size:		* If you set 100px  you set the w&h, two args means width then height.
+							* You can do ^ with percentages
+							* To keep the aspect ratio: you can define one arg w/ a value and then
+							  use auto for the other.
+							* Can also have the value: cover; which basically is similar to 100% except it would
+							  even zoom in if the image is smaller than the container
+							* The value: contain; ensure that the full image is visible in the container
+							  it doesn't care that whitespace appears
+
+	-background-repeat:		* no-repeat; //so the image isn't repeated
+							* repeat-x;  //to only repeat on the x-axis (there's a y version too)
+
+	-background-position:	*pixel or percent values;
+							*left most arg pushes the left side of the background
+							 ,next arg pushes from the top
