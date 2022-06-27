@@ -283,3 +283,15 @@ UNDERSTANDING BACKGROUND-SIZE:
 	-background-position:	*pixel or percent values;
 							*left most arg pushes the left side of the background
 							 ,next arg pushes from the top
+							*IMPORTANT: When you use percentages it actually defines shifting of 
+							 "the hidden parts of the image" not the whole image itself
+							 *EX: So if we do:
+							 			background-position: 0px 100%;
+									*We are saying "All the content that has to be cropped at the top
+									 will be cropped at the top, meaning all of the bottom since nothing
+									 is cropped there.
+							*EASY VALUES:
+									** center; //50% is cropped out from all directions
+									** left top; //left edge of the image is positioned on the left edge of container
+												 //same for top, SO NO CROPPING HAPPENS ON LEFT & TOP
+									** THESE KEY WORDS CAN STILL BE COMBINED W/ PERCENTS
