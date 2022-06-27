@@ -317,3 +317,6 @@ UNDERSTANDING BACKGROUND-SIZE:
 								   up to the padding section. THIS YIELDS AN IMAGE THAT IS PERFECTLY INSIDE 
 								   THE BOX W/ BORDERS BUT NOT UNDERNEATH THE BORDER ITSELF
 							*attachment: rarely used but is used w/ scrolling effects
+
+	-background shorthand	*Syntax:		background: image position/size repeat (origin clip) attachment;
+	 for image, pos, size:													    1 for same ^ 2 for diff
