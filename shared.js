@@ -18,10 +18,17 @@ backdrop.addEventListener("click", () => {
     mobileNav.style.display = 'none'; 
     closeModal();
 });
-noButton.addEventListener("click", closeModal);
+
+if(noButton)
+{
+    noButton.addEventListener("click", closeModal);
+}
 function closeModal()
 {
-    modal.style.display = "none";
+    if(modal)
+    {
+        modal.style.display = "none";
+    }
     backdrop.style.display = "none";
 }
 

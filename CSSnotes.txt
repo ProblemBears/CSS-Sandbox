@@ -375,3 +375,10 @@ SIZES & UNITS:
 	-Viewport Units "vw"	*These units let us always refer our sizes to the actual viewport
 	 & "vh":				*There's also vmin & vmax
 	 						*using vw may give you a default scrollbar. You could get rid of it w/ CSS
+
+
+JAVASCRIPT & CSS:
+	-Manipulate CSS with JS by doing:
+				1) element.style.someProperty = "someValue";
+				2) element.classList.add("someClassName"); //remove()
+	-In JS the property names don't have dashes, instead they are in camel case.
