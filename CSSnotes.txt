@@ -382,3 +382,18 @@ JAVASCRIPT & CSS:
 				1) element.style.someProperty = "someValue";
 				2) element.classList.add("someClassName"); //remove()
 	-In JS the property names don't have dashes, instead they are in camel case.
+
+
+MAKING OUR WEBSITE RESPONSIVE:
+	-Website Should be made mobile-first (not desktop-first)
+	-How can we tell the browser that it should apply a pixel ratio to make sure it translates hardware pixels to the Software pixels.
+		* ANSWER: <meta name="viewport" content="width=device-width, inital-scale=1.0">
+				  This means that the CSS doesn't consider hardware pixels, but instead software pixels that fit the device
+
+	-Understanding the		*content="width=Device-width, initial-scale=1.0" -  * Tells our browser it's a small device & applies a pixel ratio conversion so the site isn't squeezed in
+	"viewport" metatag															* initial-scale applies an initial zoom 
+	<meta name=viewport":														* user-scalable=no can be added to prevent zooming in.
+																				* maximum/minimum-scale = 2.0 sets the max or minimum zoom
+
+	-Media Queries: 		* Allow us to change the design depending on the actual size (specific properties change depending on the size. Ex: colors, fonts, etc)
+							* Design Changes are defined by us
