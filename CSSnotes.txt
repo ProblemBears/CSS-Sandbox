@@ -397,10 +397,11 @@ MAKING OUR WEBSITE RESPONSIVE:
 
 	-Media Queries: 		* Allow us to change the design depending on the actual size (specific properties change depending on the size. Ex: colors, fonts, etc)
 							* Design Changes are defined by us
+							* Order matters when you use min-width or max-width (ascending or descending values)
+							* Media Queries should go at the end of a CSS file
 
 	-Adding our First		* Syntax Example:		@media(min-width: 40rem) {		//(condition): In this case a CSS rule for font-size is executed once the browser has a 40rem width(640px) 
-														#product-overview h1 {
+	 Media Query:										#product-overview h1 {
 															font-size: 3rem;
 														}
 													}
-	 Media Queries:
