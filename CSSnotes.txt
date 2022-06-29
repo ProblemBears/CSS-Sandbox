@@ -416,3 +416,13 @@ MAKING OUR WEBSITE RESPONSIVE:
 
 Styling Forms:
 	-For form inputs you NEED TO specify width: 100%; because otherwise id the display = block; the width would only be taken up by a MARGIN NOT THE BORDER-CONTENT.
+
+	-Advanced Attribute		* Element with Attribute: 							[type] 				
+	 Selector:				* Element w/ Specific Attribute Value: 				[type="email"] 		
+	 						* Element w/ Specific Atrribute Value in List:		[lang~="en-us"] 	 		//So if there's more whitespace seperated values in this attribute. 
+																														It checks if the specified value is in that list
+							* Element w/ Specific Attribute Value/Value-:		[lang|="en"]		 		//Checks if the attribute values has the prefix en
+							* Element w/ Specific Attribute Value Prefix:		[lang^="#"]			 		//More flexible than the one above because you can have any character
+							* Element w/ Specific Attribute Value Suffix:		[href$=".de"]				//For suffixes
+							* Element w/ At Least One Attribute Value:			[href$=".de"]				//The ".de" should be somewhere in the value of the attribute href
+							* adding i at the end (before ]) would allow case insensitivity
