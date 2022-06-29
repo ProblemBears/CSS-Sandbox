@@ -412,3 +412,7 @@ MAKING OUR WEBSITE RESPONSIVE:
 																					**SPECIAL THING YOU CAN TARGET IS: orientation: landscape or portrait (not ideal if you want to target desktop)
 
 									** "or"							Same as ^ but seperated by commas instea of and.
+
+
+Styling Forms:
+	-For form inputs you NEED TO specify width: 100%; because otherwise id the display = block; the width would only be taken up by a MARGIN NOT THE BORDER-CONTENT.
