@@ -426,3 +426,9 @@ Styling Forms:
 							* Element w/ Specific Attribute Value Suffix:		[href$=".de"]				//For suffixes
 							* Element w/ At Least One Attribute Value:			[href$=".de"]				//The ".de" should be somewhere in the value of the attribute href
 							* adding i at the end (before ]) would allow case insensitivity
+
+	-Styling the			* New pseduoclass: 							 someSelector:not(anotherSelector)					//This means it excludes anotherSelector from the current rule
+	 checkbox:				* Psuedoclasses can go one after another:	.signup-form input:not([type="checkbox"]):focus
+	 						* <input> type like checkboxes and lists have a property:	-webkit-appearance:	none:			//WE USE NONE SO THAT WE OVERRIDE IT AND ARE ABLE TO STYLE IT
+									** -webkit-appearance is actuallyu specific to chrome so for mozilla we use -moz-appearance: and for others just appearance:
+							*When we do override -apearance then we CAN NOT CHECK THE CHECKBOX. Inorder to "reinstall" this capability we USE THE :checked PSEUDO CLASS
