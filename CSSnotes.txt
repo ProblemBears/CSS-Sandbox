@@ -405,3 +405,10 @@ MAKING OUR WEBSITE RESPONSIVE:
 															font-size: 3rem;
 														}
 													}
+							*THINK OF MEDIA QUERY'S AS IFS
+
+	-Logical operators:		* Syntax Examples:
+									** "and"						@media (min-width: 40rem) and (min-height: 60rem) {}
+																					**SPECIAL THING YOU CAN TARGET IS: orientation: landscape or portrait (not ideal if you want to target desktop)
+
+									** "or"							Same as ^ but seperated by commas instea of and.
