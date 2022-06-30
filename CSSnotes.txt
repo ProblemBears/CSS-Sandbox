@@ -470,3 +470,9 @@ WORKING WITH TEXT AND FONTS:
 
 	-font-display &			* Values: swap, block, fallback, optional, auto
 	 Loading Performance:	* Two different phases block-period and then swap-period 
+
+FLEXBOX:
+	-Introduction:			* The modern way to change the way our elements are displayed (another value of the display property)
+							* Main aspects:		1) The Flex-container
+												2) Main Axis vs. Cross Axis
+												3) The Flex Items
