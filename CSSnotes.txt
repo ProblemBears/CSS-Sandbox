@@ -435,3 +435,18 @@ Styling Forms:
 
 	-Validation				*HTML AND JS GIVE US A INVALID PSEUDOCLASS. Syntax:		someSelctor :invalid {}
 	 Feedback:						** So it detects things like invalid emails. It can detect this based on the type attribute in tags
+
+WORKING WITH TEXT AND FONTS:
+	-Comparing Generic		* Generic Family (parent): serif, sans-serif, cursive, monospace, fantasy
+	 Families & Font		* Font Family (child): 		**serif 			- Times New Roman, Georgia
+	 Families:											**sans-serif 		- Helvetica, Verdana
+	 													**cursive			- Brush Script, Mishal
+														**etc..
+							* By default the browser fonts Generic Family & Font Family are chosen. Otherwise, We can define a Generic Famiy which allows the broswer to only choose the Font Family.
+							  OR FINALLY, we can define a Font Family which can be obtained from:
+							  					1) The user's computer
+												2) Web fonts
+												3) From a server (our own possibly)
+
+	-Understanding			* Syntax:			** "fontFamily1", "fontFamily2", genericFamily; //The font familys apply left to right until one is found otherwise it fallsback to the generic family allowing 
+	 font-family:																				  the browser to set the font
