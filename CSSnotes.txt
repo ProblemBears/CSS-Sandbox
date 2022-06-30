@@ -476,3 +476,28 @@ FLEXBOX:
 							* Main aspects:		1) The Flex-container
 												2) Main Axis vs. Cross Axis
 												3) The Flex Items
+
+	-How we could			* We could get rid of the "hacky" width: calc(100% - 44px)
+	 improve our			* It would also help get rid of all of our display: inline-box;'s
+	 project using
+	 flexbox:
+
+	-Understanding			* When you apply display: flex; to an element it becomes a Flex Container(parent) therefore anything inside it becomes a
+	 Flexbox:				  Flex Item (child)	
+	 						* Then we can apply properties to the Flex Container and Flex Items:
+									** Flex Container Properties+ :
+													1) flex-flow:
+													2) justify-content:
+													3) align-content: 
+													4) align-items:
+									** Flex Items Properties+:
+													1) order:
+													2) flex:
+													3) align-self:
+
+	-Creating a Flex		* display: flex:
+	 Container:					** The child elements align like inline-blocks where they have equal heights (if not defined) according to the element with the biggest height
+	 							** The width of the child elements decreases if we decrease the width of the page; ONLY UP TO THE POINT WHERE THE CONTENT OF A CHILD MAY NEED THE SPACE
+
+							* display: inline-flex
+								** Similar to flex but the size stay static. If we move the width of the browser the element's don't change. Although, the tallest height thing still happens
