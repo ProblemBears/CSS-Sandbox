@@ -515,6 +515,9 @@ FLEXBOX:
 														**column-reverse - the reverse of column
 														**row-reverse - the reverse of row
 
+							* SHORTCUT PROPERTY:		*flex-flow: row wrap;
+							
+
 	-Main Axis & 			*Main axis goes from the top-left to the top-right
 	 Cross Axis:			*Cross axis goes from the top-left to the bottom-left
 	 						*Applying reverse to something makes it go from top-right to top-left (main axis) and top-right to bottom-right (cross axis)
@@ -525,3 +528,13 @@ FLEXBOX:
 									** row-reverse:				TR -> TL				TR -> BR
 									** column:					TL -> BL				TL -> TR
 									** column-reverse:			BL -> TL 				BL -> BR
+
+	-"align-items" &		* The default property that allows all heights to follow the max height is:		align-items: stretch;
+	 "justify-content":				** Other Values:	**center - no more equal heights, but they're aligned to the center
+	 													**flex-start - aligns to the cross axis
+														**flex-end - alings to the cross axis(but at the end of it) (affects height)
+
+							* "justify-content" has the same values except they relate to the main axis (instead of the cross axis)
+
+	-"align-content":		* align-content: center; - Allows us to align our items along the cross axis
+									**space-between  - Leaves a space between the beginning and end of the cross axis when condensing the width
