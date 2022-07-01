@@ -538,3 +538,21 @@ FLEXBOX:
 
 	-"align-content":		* align-content: center; - Allows us to align our items along the cross axis
 									**space-between  - Leaves a space between the beginning and end of the cross axis when condensing the width
+
+	-Flexbox Items			* order:					** Explanation: 	Changes the order of an element
+	 Properties:										** Values: 			1 (someNumber that describes the order. All start at 0 by default. Anything higher puts it at the end of the list, lower puts it at the front)
+
+	 						* align-self:				** Explanation: 	Positions the element in relation to the Cross Axis as align-items would. Except the alignment only applies to this single Flex Item
+														** Values:			Everything 'align-items' has
+
+							* flex-grow: 				** Explanation: INT's where all of the children of the parent flexbox that have this. Declare it's own fraction of what it has. So 4 grows 4 times as faster
+														** values:	INT's
+
+							* flex-shrink:				** Explanation: Default value is 1. 0 doesn't shrink elements. If one element has value 1, and another 4. Then the fraction of both decides the speed of the shrink.
+														** Values: INT's
+
+							* flex-basis:				** Explanation: Defines the size of an element depending on the main axis (it overrides the width property if set to row. And the height if set to column)
+																		It fallsback to the standard width/height property if thr value of flex-basis is auto (because it follows the main axis)
+																		% is dependent of the size of the flex container
+														** Values: px, %
+														** Shorthand:		flex: grow shrink basis;  //These are property names not values. Replace with values.
