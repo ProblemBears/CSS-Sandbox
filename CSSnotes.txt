@@ -514,3 +514,14 @@ FLEXBOX:
 									*flex-direction:	**column - The elements now behave the way block elements would. Except when you decrease the page width. It shifts up to the content
 														**column-reverse - the reverse of column
 														**row-reverse - the reverse of row
+
+	-Main Axis & 			*Main axis goes from the top-left to the top-right
+	 Cross Axis:			*Cross axis goes from the top-left to the bottom-left
+	 						*Applying reverse to something makes it go from top-right to top-left (main axis) and top-right to bottom-right (cross axis)
+							*So we start minimizing using a normal "wrap", then the elements start shifting from the main axis to the cross axis
+							*For columns (the prior 4 *'s were for rows) the same things apply but we reverse the main axis with the cross axis for every case
+							* Summary:							Main Axis				Cross Axis
+									** row: 					TL -> TR				TL -> BL
+									** row-reverse:				TR -> TL				TR -> BR
+									** column:					TL -> BL				TL -> TR
+									** column-reverse:			BL -> TL 				BL -> BR
