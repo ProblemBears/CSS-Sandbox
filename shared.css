@@ -33,11 +33,13 @@ main {
     top: 0px;
     left: 0px;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .main-nav__item{
-    display: inline-block;
-    margin: 0px 16px;
+    margin: 0px 1rem;
 }
 
 .main-nav__item a,
@@ -79,11 +81,7 @@ main {
     padding: 0;
     margin: 0;
     list-style: none;
-}
-
-.main-header > div{
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
 }
 
 .toggle-button {
@@ -116,10 +114,7 @@ main {
     }
 
     .main-nav{
-        display: inline-block;
-        text-align: right;
-        width: calc(100% - 44px);
-        vertical-align: middle;
+        display: flex;
     }
   }
 
@@ -127,13 +122,13 @@ main {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    height: 2.5rem;
     display: inline-block;
     vertical-align: middle;
 }
 
 .main-header__brand img {
-    height: 100%;
+    height: 2.5rem;
+    vertical-align: middle;
 }
 
 /*FOOTER*/
