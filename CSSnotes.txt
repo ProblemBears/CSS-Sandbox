@@ -624,3 +624,6 @@ CSS GRID:
 
 	-Using the Grid			* Any Grid container child element that is not part of the "flow" IS NOT put into the grid
 	 on our Project:
+
+	-fit-content(8rem)		* A useful value when it comes to having some row that should have some minimum size but also not be bigger than its content
+							* We put it as the size of the last row (the footer) so the Grid row can fit it perfectly
