@@ -627,3 +627,39 @@ CSS GRID:
 
 	-fit-content(8rem)		* A useful value when it comes to having some row that should have some minimum size but also not be bigger than its content
 							* We put it as the size of the last row (the footer) so the Grid row can fit it perfectly
+
+	-Positioning Grid		* By default the elements take up the whole area of a Grid cell. But there are properties that can change this. They must be placed where the Grid container was defined:
+	 Elements:							1) justify-items:		* center - the elements become centered to their "area"
+	 															* start - moves the element to the start of their area
+																* end - moves the element to the end of their area
+																* stretch - the default value
+
+										2) align-columns:		* Exactly the same as justify-items except its for COLUMNS in the "area"
+
+	-Positioning the		* justify-content:	*Same values as above but for all of the content in the Grid  //X-AXIS (Row)
+	 entire grid			* align-content:	*Y-AXis (col)
+	 content:
+
+	-Positioning			* First go to the rule of the individual element you want to reposition and use:
+	 Elements 						** justify-self: center, start, end, etc... (X-AXIS)
+	 Individually:					** align-self: same ^ (Y-AXIS)
+
+	-Understanding 			* Literally just update the row and column layouts / areas
+	 Responsive Grids:
+	 (Grid+Media Queries)
+
+	-Applying Autoflow:		* The Grid automatically adds rows after our defined rows if needed.
+								** The size of these dynamic rows are "as big as they neeed to be" by default. (the biggest controls the height of the row)
+								** WE COULD OVERRIDE THIS WITH-		grid-auto-rows: 30rem;	(the default value WAS auto)
+							* To generate dynamic columns instead of rows use:
+										grid-auto-flow: column (WAS row BY DEFAULT)
+								**Then we'd also be able to size the column generation with: grid-auto-columns: 30rem;
+
+	-"auto-fill" &			* grid-template-columns: repeat(auto-fill, 10rem);
+	 "auto-fit"						** Ensures that it fills the current row with as many items as possible and then it will "wrap" and enter a new row.
+	 						* If we replace auto-fill above with auto-fit, it will have the same behaviour except that auto-fit also centers the items
+
+	-Creating a Dense		* grid-auto-flow: row dense; 			//this is the property that can have the value column dense
+	 Grid:							** dense overwrites elements not positioning themselves to fill up gaps because of
+	 									their size and their respect of the DOM. So now there shouldn't be gaps!
+									** Though this may not be optimal. Because screen readers still respect the DOM
