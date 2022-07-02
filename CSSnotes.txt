@@ -573,6 +573,8 @@ CSS GRID:
 							  as much of the remaining space as 1fr
 							* Another value is auto. For columns it takes the remaining available width, and for rows it takes as much space as it needs to fit the content
 							* TO REPEAT THE SAME SIZE FOR MANY COLS/ROWS USE the repeat() function as a value:		repeat(4, 25%); //yields 4 columns w/ size 25%
+																																	//You can put a name infront of 25% w/ [col-start] and behind [col-end]
+																																	  then later on reference them with grid-column: col-start 2 / col-end 2;
 																													minmax(10px, 200px); //Defines a range of the size we could put if space is available
 
 							*WE CAN ALSO EXPLICITLY DEFINE ROWS (in the same location as columns): using 'grid-template-rows'. The values work the same as columns (define sizes for as many rows as you want)
@@ -619,3 +621,6 @@ CSS GRID:
 													grid-area: header;
 							  AND IT WILL KNOW WHERE TO GO BASED ON the 'grid-template-areas- WE DEFINED IN THE GRID CONTAINER
 							*Grid area does not respect the DOM
+
+	-Using the Grid			* Any Grid container child element that is not part of the "flow" IS NOT put into the grid
+	 on our Project:
