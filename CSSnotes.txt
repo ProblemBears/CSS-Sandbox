@@ -679,3 +679,5 @@ TRANSFORMING ELEMENTS WITH CSS TRANSFORMS:
 	-Working w/ "skew"		* "skew" and "scale" are function values of 'transform'
 	 and "scale"					** skew(xVal, yVal)
 	 										** If you also do a skew on the child. You can revert the child to it's original skew all the while keeping the skew of the parent
+									** scale(2)
+											** the 2 here would mean double the size of the original size on both the x and y axis
