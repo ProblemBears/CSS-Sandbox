@@ -681,3 +681,12 @@ TRANSFORMING ELEMENTS WITH CSS TRANSFORMS:
 	 										** If you also do a skew on the child. You can revert the child to it's original skew all the while keeping the skew of the parent
 									** scale(2)
 											** the 2 here would mean double the size of the original size on both the x and y axis
+
+	-Rotating Elements		* Rotation along the X and Y axis is 3D (it's hard to see because we are in "far perspective" by default)
+	 in 3D(and using		* using perspective(500px) we say "the smaller the perspective is, the closer you are to the element". This only affects the element where the function is used.
+	 'perspective'):				** PERSPECTIVE CAN BE A PROPERTY WHICH SHOULD BE APPLIED TO THE PARENT. +it gets applied to all children 
+	 						* Change the angle of the perspective by using: 		perspective-origin: right (can be %, rem, px)
+							* 'transform-style' has the default flat value which is bad if we rotate the parent
+											** We use the 'preserve-3d' value to not make children invisible depending on a transformation 
+							* 'backface-visibilty' erases elements that are showing their "backface"
+	 
