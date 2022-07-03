@@ -690,3 +690,12 @@ TRANSFORMING ELEMENTS WITH CSS TRANSFORMS:
 											** We use the 'preserve-3d' value to not make children invisible depending on a transformation 
 							* 'backface-visibilty' erases elements that are showing their "backface"
 	 
+TRANSITIONS AND ANIMATIONS IN CSS:
+	-'transition' is a property that lets you "watch other properties" and set timing functions/animations.
+
+	-'transition'			* transition: opacity 0.2s ease-in 1s, transform 0.5s
+	  Syntax:							 ** Each property we watch (as in watch for JS to change the property) has an animation time for the transition to finish and you can specify ease-in (or out)
+	  										to start the animation slow and end fast. The time after ease-in means nothing happens for 1 second and then it plays the animation
+
+	-CSS Timing 			* Google CSS Timing Functions for a helpful cheat sheet
+	 Functions:

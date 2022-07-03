@@ -235,6 +235,12 @@ main {
     color: #a1a1a1;
 }
 
+.open{
+    display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
 @media(min-width: 40rem)
 {
     .main-footer__link {
