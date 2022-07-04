@@ -751,3 +751,10 @@ WRITING FUTURE-PROOF CSS CODE:
 							  and then be able to use it as a value anywhere else with:
 							  				var(--some-var-name);
 							  a second argument in var() can be used as a fallbcack value
+
+	-Which prefixes			* Every browser has its own prefix. To support independent module implementation.
+	 should you use?:		* You can use the prefix /w a property, by repeatedly defining the property
+	 						  and defining the standard property at the end which should use that final 
+							  property if the browser has support for it, otherwise it uses its prefix.
+							* GITHUB ATUOPREFIXER is a tool to do this automatically. There are also online 
+							 versions where you can paste your code and it generates the prefixed version.
