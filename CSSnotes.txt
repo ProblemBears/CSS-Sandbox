@@ -770,3 +770,8 @@ WRITING FUTURE-PROOF CSS CODE:
 	-Pollyfills:			* Definition: A polyfill is a JS Package which enables certain CSS Features
 										  in Browsers which would not support it otherwise.
 							* Polyfills are computationally expensive because they have to be loaded & parsed.
+
+	-Eliminate Cross		* Different browsers have different defaults (font sizes, paddings, box sizes, etc...)
+	 Browser 				* Therefore, you can implement some "reset libraries" like Normalize.css which 
+	 Inconsistencies:		  should be the first import in your html files (like our * {} where we set 
+	 						  box-sizing: border-box;)
