@@ -766,3 +766,7 @@ WRITING FUTURE-PROOF CSS CODE:
 							 This checks if the propert: value pair is supported and if it is, it executes
 							 the rules within the {}
 							 * You can use and, or, not keywords after the parenthesis to append more conditions.
+
+	-Pollyfills:			* Definition: A polyfill is a JS Package which enables certain CSS Features
+										  in Browsers which would not support it otherwise.
+							* Polyfills are computationally expensive because they have to be loaded & parsed.
