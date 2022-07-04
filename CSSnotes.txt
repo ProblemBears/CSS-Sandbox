@@ -741,3 +741,5 @@ TRANSITIONS AND ANIMATIONS IN CSS:
 	  Event Listener:					1) 'animationstart'
 	  									2) 'animationend'
 										3) 'animationiteration'
+
+FINISHED! JULY 4!!
