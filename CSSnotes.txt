@@ -758,3 +758,11 @@ WRITING FUTURE-PROOF CSS CODE:
 							  property if the browser has support for it, otherwise it uses its prefix.
 							* GITHUB ATUOPREFIXER is a tool to do this automatically. There are also online 
 							 versions where you can paste your code and it generates the prefixed version.
+
+	-Detecting browser		* Syntax:		@supports (property: value)
+	 support w/ @supports:					{
+												//Insert Rules to execute here.
+	 										}
+							 This checks if the propert: value pair is supported and if it is, it executes
+							 the rules within the {}
+							 * You can use and, or, not keywords after the parenthesis to append more conditions.
