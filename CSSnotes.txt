@@ -781,3 +781,6 @@ WRITING FUTURE-PROOF CSS CODE:
 	 						* Block Element Modifier Style (BEM):
 										.BLOCK__ELEMENT--MODIFIER
 								** Ex: .menu-main__item--size-big
+
+	-Vanilla CSS vs			* Component Frameworks: Bootstrap
+	 Frameworks:			* Fast components but they may look the same to other websites
