@@ -741,3 +741,13 @@ TRANSITIONS AND ANIMATIONS IN CSS:
 	  Event Listener:					1) 'animationstart'
 	  									2) 'animationend'
 										3) 'animationiteration'
+
+WRITING FUTURE-PROOF CSS CODE:
+	-Usign CSS 				* For situations where we have a value that is repeated a lot.
+	 Variables:				* For a color value we would define:
+	 										:root {						(:root refers to the entire doc)
+												--some-var-name: #ffff;
+											}
+							  and then be able to use it as a value anywhere else with:
+							  				var(--some-var-name);
+							  a second argument in var() can be used as a fallbcack value
