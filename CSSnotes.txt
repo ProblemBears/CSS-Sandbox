@@ -784,3 +784,9 @@ WRITING FUTURE-PROOF CSS CODE:
 
 	-Vanilla CSS vs			* Component Frameworks: Bootstrap
 	 Frameworks:			* Fast components but they may look the same to other websites
+
+INTRODUCING SASS (Synctactically Awesome Style Sheets)
+	-What is SASS &			* SASS does not run on the browser
+	 SCSS?								INSTEAD
+	 						  It extends CSS during development only.
+							  THEREFORE, it has to be compiled to normal CSS before production.
