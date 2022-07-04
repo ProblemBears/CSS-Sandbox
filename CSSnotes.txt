@@ -775,3 +775,9 @@ WRITING FUTURE-PROOF CSS CODE:
 	 Browser 				* Therefore, you can implement some "reset libraries" like Normalize.css which 
 	 Inconsistencies:		  should be the first import in your html files (like our * {} where we set 
 	 						  box-sizing: border-box;)
+
+	-CSS Classes			* Use kebab case (dashes) since CSS is case insensitive
+	 naming conventions:	* Name by feature not style. The styling could be read from the properties we use.
+	 						* Block Element Modifier Style (BEM):
+										.BLOCK__ELEMENT--MODIFIER
+								** Ex: .menu-main__item--size-big
